@@ -1,6 +1,7 @@
+import { FaBars, FaTimes } from "react-icons/fa";
 import './App.css';
 import axios from "axios";
-import { useState } from "react";
+import React, { useState } from "react";
 
 
 function App() {
@@ -12,6 +13,8 @@ function App() {
     message: ""
   });
    const [showMore, setShowMore] = useState(false);
+   const [menuOpen, setMenuOpen] = useState(false);
+   
 
   const handleChange = (e) => {
 
@@ -57,6 +60,15 @@ function App() {
   return (
 
     <div>
+     <div className="bg-blobs">
+
+        <div className="blob blob1"></div>
+
+        <div className="blob blob2"></div>
+
+        <div className="blob blob3"></div>
+
+      </div>
 
      {/* ================= NAVBAR ================= */}
 
@@ -72,8 +84,21 @@ function App() {
 
 </div>
 
+<div
+  className="hamburger"
+  onClick={() => setMenuOpen(!menuOpen)}
+>
 
-  <ul className="nav-links">
+  {
+    menuOpen
+    ?
+    <FaTimes />
+    :
+    <FaBars />
+  }
+
+</div>
+  <ul className={menuOpen ? "nav-links active" : "nav-links"}>
 
     <li>
       <a href="#hero">
@@ -150,7 +175,9 @@ function App() {
         {/* LEFT SIDE */}
 
         <div className="hero-left">
-
+<div className="hero-tag">
+  PREMIUM BRANDING STUDIO
+</div>
           <h1>
             Helping Local Businesses
             <br />
@@ -193,6 +220,37 @@ function App() {
         </div>
 
       </section>
+      {/* ================= STATS ================= */}
+
+<section className="stats-section">
+
+  <div className="stat-box">
+
+    <h2>50+</h2>
+
+    <p>Designs Created</p>
+
+  </div>
+
+
+  <div className="stat-box">
+
+    <h2>20+</h2>
+
+    <p>Happy Clients</p>
+
+  </div>
+
+
+  <div className="stat-box">
+
+    <h2>100%</h2>
+
+    <p>Client Satisfaction</p>
+
+  </div>
+
+</section>
 
 
 
@@ -959,20 +1017,35 @@ function App() {
 
       {/* ================= FOOTER ================= */}
 
-      <footer className="footer">
+     <footer className="footer">
 
-        <h3>Velora</h3>
+  <h2>VELORA</h2>
 
-        <p>
-          Helping small businesses build
-          a strong online presence.
-        </p>
+  <p className="footer-tagline">
+    Designs that help businesses
+    stand out beautifully.
+  </p>
 
-        <p className="copyright">
-          © 2026 Velora. All rights reserved.
-        </p>
 
-      </footer>
+  <div className="footer-links">
+
+    <a href="#hero">HOME</a>
+
+    <a href="#services">SERVICES</a>
+
+    <a href="#recentworks">WORKS</a>
+
+    <a href="#contact">CONTACT</a>
+
+  </div>
+
+
+  <p className="copyright">
+    © 2026 Velora Design Studio.
+    All rights reserved.
+  </p>
+
+</footer>
 
     </div>
 

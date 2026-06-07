@@ -2337,15 +2337,28 @@ body {
   /* WORK PROJECT */
 
   .work-project,
-  .work-project.reverse{
-    flex-direction:column !important;
+.work-project.reverse{
+  display:flex;
 
-    gap:25px !important;
+  flex-direction:column !important;
 
-    margin-bottom:60px !important;
+  align-items:center !important;
 
-    text-align:center;
-  }
+  justify-content:center !important;
+
+  gap:20px !important;
+
+  margin-bottom:70px !important;
+
+  text-align:center;
+}
+.work-text{
+  order:1;
+}
+
+.work-image{
+  order:2;
+}
 
 
   /* TEXT */

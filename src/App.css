@@ -2447,3 +2447,75 @@ body {
   }
 
 }
+/* HERO IMAGE */
+
+.design-showcase{
+  width:100%;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.hero-main-image{
+  width:100%;
+  max-width:650px;
+
+  border-radius:30px;
+
+  object-fit:cover;
+
+  transition:0.3s;
+}
+
+.hero-main-image:hover{
+  transform:scale(1.02);
+}
+
+
+/* MOBILE */
+
+@media screen and (max-width:768px){
+
+  .hero-main-image{
+    width:92%;
+
+    max-width:350px;
+  }
+
+}
+/* NAVBAR LOGO */
+
+.logo-box{
+  display:flex;
+  align-items:center;
+}
+
+.navbar-logo{
+  width:120px;
+
+  height:120px;
+
+  object-fit:cover;
+
+  border-radius:50%;
+
+  transition:0.3s;
+}
+
+.navbar-logo:hover{
+  transform:scale(1.05);
+}
+
+
+/* MOBILE */
+
+@media screen and (max-width:768px){
+
+  .navbar-logo{
+    width:80px;
+
+    height:80px;
+  }
+
+}

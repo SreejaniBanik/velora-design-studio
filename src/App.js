@@ -64,11 +64,13 @@ function App() {
 
   <div className="logo-box">
 
-    <h2>VELORA</h2>
+  <img
+    src="/images/velora-logo1.png"
+    alt="Velora Logo"
+    className="navbar-logo"
+  />
 
-    <p>DESIGN STUDIO</p>
-
-  </div>
+</div>
 
 
   <ul className="nav-links">
@@ -198,50 +200,13 @@ function App() {
 
           <div className="design-showcase">
 
+  <img
+    src="/images/hero-design.png"
+    alt="Velora Showcase"
+    className="hero-main-image"
+  />
 
-            {/* LOGO CARD */}
-
-            <div className="logo-card">
-
-              <div className="fake-logo">
-                VB
-              </div>
-
-              <h3>Logo</h3>
-
-            </div>
-
-
-
-            {/* CATALOGUE */}
-
-            <div className="catalogue-book">
-
-              <div className="book-cover">
-
-                <h2>CATALOGUE</h2>
-
-                <p>
-                  Premium Product Designs
-                </p>
-
-              </div>
-
-            </div>
-
-
-
-            {/* MENU CARD */}
-
-            <div className="menu-card">
-
-              <h3>MENU</h3>
-
-              <div className="qr-box"></div>
-
-            </div>
-
-          </div>
+</div>
 
         </div>
 

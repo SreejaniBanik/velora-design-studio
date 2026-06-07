@@ -1109,66 +1109,34 @@ backdrop-filter:blur(10px);
 
 @media screen and (max-width:900px){
  .navbar{
-  padding:20px;
-}
+  height:auto;
 
-
-.logo-box{
-  z-index:1001;
+  padding:15px;
 }
 
 
 .nav-links{
+  gap:14px;
 
-  position:fixed;
-
-  top:0;
-  right:-100%;
-
-  width:70%;
-
-  height:100vh;
-
-  background:white;
-
-  flex-direction:column;
+  flex-wrap:wrap;
 
   justify-content:center;
-
-  align-items:center;
-
-  gap:35px;
-
-  transition:0.4s ease;
-
-  z-index:1000;
 }
 
 
-.nav-links.active{
-  right:0;
+.nav-links a{
+  font-size:13px;
+}
+
+
+.navbar-logo{
+  width:65px;
 }
 
 
 .hamburger{
-  display:block;
-
-  font-size:30px;
-
-  z-index:1001;
+  display:none;
 }
-  .services{
-    padding:80px 25px;
-  }
-
-  .services-boxes{
-    gap:20px;
-  }
-
-  .service-sketch-box{
-    width:45%;
-  }
-
 }
 .hamburger{
   display:none;

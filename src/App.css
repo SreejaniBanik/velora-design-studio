@@ -450,81 +450,125 @@ backdrop-filter:blur(10px);
 
 /* ================= CONTACT ================= */
 
-.contact {
-  padding:90px 20px;
+.contact-section{
+  width:100%;
+
+  padding:110px 20px;
+
+  text-align:center;
+}
+
+
+.contact-title h2{
+  font-size:52px;
+
+  letter-spacing:6px;
+
+  color:#111827;
+
+  margin-bottom:20px;
+}
+
+
+.contact-line{
+  width:220px;
+
+  height:4px;
+
+  background:#c89f73;
+
+  margin:auto;
+
+  border-radius:20px;
+
+  margin-bottom:35px;
+}
+
+
+.contact-text{
+  max-width:750px;
+
+  margin:auto;
+
+  font-size:20px;
+
+  line-height:1.9;
+
+  color:#555;
+
+  margin-bottom:50px;
+}
+
+
+
+/* BUTTONS */
+
+.contact-buttons{
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+  gap:25px;
+
+  flex-wrap:wrap;
+}
+
+
+.contact-btn{
+  padding:18px 42px;
+
+  border-radius:60px;
 
   background:#111827;
 
   color:white;
 
-  text-align:center;
-}
-
-.contact h2 {
-  font-size:42px;
-
-  margin-bottom:15px;
-}
-
-.contact p {
-  margin-bottom:40px;
-
-  color:#d1d5db;
-}
-
-.contact-form {
-  width:40%;
-
-  margin:auto;
-
-  display:flex;
-
-  flex-direction:column;
-
-  gap:20px;
-}
-
-.contact-form input,
-.contact-form textarea {
-  padding:16px;
-
-  border:none;
-
-  border-radius:10px;
+  text-decoration:none;
 
   font-size:16px;
-}
 
-.contact-form textarea {
-  height:120px;
-
-  resize:none;
-}
-
-.contact-form button {
-  padding:16px;
-
-  border:none;
-
-  border-radius:10px;
-
-  
-
-  color:#111827;
-
-  font-size:18px;
-
-  font-weight:600;
-
-  cursor:pointer;
+  letter-spacing:1px;
 
   transition:0.3s;
 }
 
-.contact-form button:hover {
-  background:#d1d5db;
+
+.contact-btn:hover{
+  background:#c89f73;
+
+  transform:
+  translateY(-5px)
+  scale(1.03);
+
+  box-shadow:
+  0 15px 30px rgba(0,0,0,0.12);
 }
 
+
+
+/* MOBILE */
+
+@media screen and (max-width:768px){
+
+  .contact-title h2{
+    font-size:34px;
+
+    letter-spacing:3px;
+  }
+
+
+  .contact-text{
+    font-size:17px;
+  }
+
+
+  .contact-btn{
+    width:90%;
+  }
+
+}
 
 
 /* ================= FOOTER ================= */

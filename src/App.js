@@ -1,61 +1,15 @@
 import { FaBars, FaTimes } from "react-icons/fa";
 import './App.css';
-import axios from "axios";
+
 import React, { useState } from "react";
 
 
 function App() {
 
-  const [formData, setFormData] = useState({
-    name: "",
-    phone: "",
-    business: "",
-    message: ""
-  });
+ 
    const [showMore, setShowMore] = useState(false);
    const [menuOpen, setMenuOpen] = useState(false);
    
-
-  const handleChange = (e) => {
-
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-
-  };
-
-  const handleSubmit = async (e) => {
-
-    e.preventDefault();
-
-    try {
-
-      const response = await axios.post(
-        "http://localhost:5000/add-lead",
-        formData
-      );
-
-      alert(response.data.message);
-
-      setFormData({
-        name: "",
-        phone: "",
-        business: "",
-        message: ""
-      });
-
-    }
-
-    catch (error) {
-
-      console.log(error);
-
-      alert("Something went wrong");
-
-    }
-
-  };
 
   return (
 
@@ -951,64 +905,66 @@ function App() {
 
       {/* ================= CONTACT ================= */}
 
-<section className="contact" id="contact">
+{/* ================= CONTACT ================= */}
 
-  <h2>Get In Touch</h2>
+<section className="contact-section" id="contact">
 
-  <p>
-    Fill out the form below and we’ll contact you on WhatsApp.
+  <div className="contact-title">
+
+    <h2>LET'S WORK TOGETHER</h2>
+
+    <div className="contact-line"></div>
+
+  </div>
+
+
+  <p className="contact-text">
+
+    Want premium branding designs for your business?
+    Reach out through WhatsApp, Email or Instagram.
+
   </p>
 
 
-  <form
-    className="contact-form"
-    onSubmit={handleSubmit}
-  >
 
-    <input
-      type="text"
-      placeholder="Your Name"
-      name="name"
-      value={formData.name}
-      onChange={handleChange}
-      required
-    />
+  <div className="contact-buttons">
 
+    <a
+      href="https://wa.me/919874714009"
+      target="_blank"
+      rel="noreferrer"
+      className="contact-btn"
+    >
 
-    <input
-      type="text"
-      placeholder="Phone Number"
-      name="phone"
-      value={formData.phone}
-      onChange={handleChange}
-      required
-    />
+      WhatsApp
+
+    </a>
 
 
-    <input
-      type="text"
-      placeholder="Business Name"
-      name="business"
-      value={formData.business}
-      onChange={handleChange}
-    />
+
+    <a
+      href="mailto:veloradesignstudio2@gmail.com"
+      className="contact-btn"
+    >
+
+      Email
+
+    </a>
 
 
-    <textarea
-      placeholder="Tell us about your business"
-      name="message"
-      value={formData.message}
-      onChange={handleChange}
-    ></textarea>
 
+    <a
+      href="https://www.instagram.com/_veloradesigns._?igsh=d2dtaDlrMGh4dmsw"
+      target="_blank"
+      rel="noreferrer"
+      className="contact-btn"
+    >
 
-    <button type="submit">
+      Instagram
 
-      Submit
+    </a>
 
-    </button>
-
-  </form>
+  </div>
 
 </section>
 

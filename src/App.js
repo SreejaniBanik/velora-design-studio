@@ -169,25 +169,7 @@ function App() {
           </p>
 
 
-          <a
-            href="https://wa.me/919874714009"
-            target="_blank"
-            rel="noreferrer"
-          >
-
-            <button className="hero-whatsapp">
-
-              <img
-                src="https://cdn-icons-png.flaticon.com/512/733/733585.png"
-                alt="whatsapp"
-                className="wp-icon"
-              />
-
-              WhatsApp Me
-
-            </button>
-
-          </a>
+         
 
         </div>
 

@@ -2297,3 +2297,140 @@ body {
   }
 
 }
+/* ================= MOBILE RESPONSIVE ================= */
+
+@media screen and (max-width:768px){
+
+  /* SECTION SPACING */
+
+  section{
+    padding:50px 20px !important;
+  }
+
+
+  /* TITLES */
+
+  .recent-title h2,
+  .services-title,
+  .works-heading p,
+  .packages-title h2,
+  .testimonial-title h2,
+  .contact-title h2{
+    font-size:26px !important;
+
+    letter-spacing:4px !important;
+
+    text-align:center;
+  }
+
+
+  /* UNDERLINES */
+
+  .recent-line,
+  .services-line{
+    width:140px !important;
+
+    height:4px;
+  }
+
+
+  /* WORK PROJECT */
+
+  .work-project,
+  .work-project.reverse{
+    flex-direction:column !important;
+
+    gap:25px !important;
+
+    margin-bottom:60px !important;
+
+    text-align:center;
+  }
+
+
+  /* TEXT */
+
+  .work-text{
+    width:100% !important;
+
+    padding:0 !important;
+  }
+
+
+  .work-text h3{
+    font-size:18px !important;
+
+    margin-bottom:15px;
+  }
+
+
+  .work-text p{
+    font-size:14px !important;
+
+    line-height:1.8 !important;
+
+    padding:0 5px;
+  }
+
+
+  /* IMAGE */
+
+  .work-image{
+    width:100% !important;
+
+    display:flex;
+    justify-content:center;
+  }
+
+
+  .work-image img{
+    width:85% !important;
+
+    max-width:300px !important;
+
+    height:auto !important;
+
+    object-fit:cover;
+  }
+
+
+  /* SERVICE BOXES */
+
+  .design-box{
+    width:100% !important;
+
+    max-width:280px;
+
+    min-height:auto;
+
+    padding:25px 18px;
+  }
+
+
+  /* HOW IT WORKS */
+
+  .works-container{
+    flex-direction:column;
+  }
+
+  .arrow{
+    transform:rotate(90deg);
+  }
+
+
+  /* NAVBAR */
+
+  .nav-links{
+    display:none;
+  }
+
+
+  /* BUTTON */
+
+  .more-work-btn{
+    padding:14px 28px;
+
+    font-size:14px;
+  }
+
+}

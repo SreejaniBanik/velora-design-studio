@@ -547,7 +547,7 @@ function App() {
 
   {/* PROJECT 2 */}
 
-  <div className="work-project reverse">
+<div className="work-project">
 
     <div className="work-image">
 
@@ -585,7 +585,7 @@ function App() {
 
 {/* PROJECT 4 */}
 
-<div className="work-project reverse">
+<div className="work-project">
 
   <div className="work-image">
 
@@ -716,7 +716,7 @@ function App() {
 
       
 
-<div className="work-project reverse">
+<div className="work-project">
 
   <div className="work-image">
 
